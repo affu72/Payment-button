@@ -3,7 +3,7 @@ const PaymetStatus = () => {
   setTimeout(() => {
     return new Promise((resolve, reject) => {
       let num = Math.random();
-      if (num < 0.5) resolve(1);
+      if (num < 0.3) resolve(1);
       reject("PaymentFailed");
     });
   }, 1000);

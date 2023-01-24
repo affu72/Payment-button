@@ -33,6 +33,12 @@ export default function PaymentButton() {
     }, 1000);
   };
 
+  if (status === "REJECTED") {
+    setTimeout(() => {
+      setStatus("PENDING");
+    }, 3000);
+  }
+
   return (
     <Card className="payment-card">
       {
